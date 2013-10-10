@@ -2,7 +2,7 @@
 /**
 * Bootstrapping, setting up and loading the core.
 *
-* @package LydiaCore
+* @package HandyCore
 */
 
 /**
@@ -10,8 +10,8 @@
 */
 function autoload($aClassName) {
   $classFile = "/src/{$aClassName}/{$aClassName}.php";
-   $file1 = LYDIA_SITE_PATH . $classFile;
-   $file2 = LYDIA_INSTALL_PATH . $classFile;
+   $file1 = HANDY_SITE_PATH . $classFile;
+   $file2 = HANDY_INSTALL_PATH . $classFile;
    
    if(is_file($file1)) {
       require_once($file1);

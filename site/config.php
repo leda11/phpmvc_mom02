@@ -29,7 +29,7 @@ $ly->config['character_encoding'] = 'UTF-8';
 /*
 * Define language
 */
-$ly->config['language'] = 'en';
+$ha->config['language'] = 'en';
 
 /**
 * Define the controllers, their classname and enable/disable them.
@@ -40,14 +40,14 @@ $ly->config['language'] = 'en';
 * $ly->FrontControllerRoute();
 * which is called in the frontcontroller phase from index.php.
 */
-$ly->config['controllers'] = array(
+$ha->config['controllers'] = array(
   'index'     => array('enabled' => true,'class' => 'CCIndex'),
 );
 
 /*
 * Settings for the theme.
 */
-$ly->config['theme'] = array(
+$ha->config['theme'] = array(
   // The name of the theme in the theme directory
   'name'    => 'core',
 );
@@ -60,9 +60,9 @@ $ly->config['theme'] = array(
 * clean        = 1      => controller/method/arg1/arg2/arg3
 * querystring  = 2      => index.php?q=controller/method/arg1/arg2/arg3
 */
-$ly->config['url_type'] = 1;
+$ha->config['url_type'] = 1;
 
 /**
 * Set a base_url to use another than the default calculated
 */
-$ly->config['base_url'] = null;
+$ha->config['base_url'] = null;

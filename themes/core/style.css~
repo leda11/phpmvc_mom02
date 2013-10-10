@@ -7,7 +7,7 @@
 */
 html{}
 body{
-   background-color:#eee;
+   background-color:#fff;
    font: 1em Verdana, Arial, Helvetica, sans-serif;
 }
 
@@ -16,6 +16,6 @@ body{
 #footer {
    margin:0 auto;
    width:970px;
-   background-color:#fff;
+   background-color:#eee;
    padding: 1em;
 }

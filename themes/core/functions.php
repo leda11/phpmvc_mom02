@@ -20,11 +20,11 @@ function current_url() {
 
 
 /**
-* Helpers for the template file. GLOBAL (inkluderas i CLydia::ThemeEngineRender()
+* Helpers for the template file. GLOBAL (inkluderas i CHandy::ThemeEngineRender()
 */
-$ly->data['header'] = '<h1>Header: Lydia 06</h1>';
-$ly->data['main']   = '<p>Main: Now with a theme engine, Not much more to report for now.</p>';
-$ly->data['footer'] = '<p>Footer: &copy; Lena Dackhammar (copy - Lydia by Mikael Roos (mos@dbwebb.se)</p>';
+$ha->data['header'] = '<h1>Header: Lydia 06</h1>';
+$ha->data['main']   = '<p>Main: Now with a theme engine, Not much more to report for now.</p>';
+$ha->data['footer'] = '<p>Footer: &copy; Lena Dackhammar (copy - Lydia by Mikael Roos (mos@dbwebb.se)</p>';
 
 
 
@@ -32,10 +32,10 @@ $ly->data['footer'] = '<p>Footer: &copy; Lena Dackhammar (copy - Lydia by Mikael
 * Print debuginformation from the framework.
 */
 function get_debug() {
-  $ly = CLydia::Instance();
-  $html = "<h2>Debuginformation</h2><hr><p>The content of the config array:</p><pre>" . htmlentities(print_r($ly->config, true)) . "</pre>";
-  $html .= "<hr><p>The content of the data array:</p><pre>" . htmlentities(print_r($ly->data, true)) . "</pre>";
-  $html .= "<hr><p>The content of the request array:</p><pre>" . htmlentities(print_r($ly->request, true)) . "</pre>";
+  $ha = CHandy::Instance();
+  $html = "<h2>Debuginformation</h2><hr><p>The content of the config array:</p><pre>" . htmlentities(print_r($ha->config, true)) . "</pre>";
+  $html .= "<hr><p>The content of the data array:</p><pre>" . htmlentities(print_r($ha->data, true)) . "</pre>";
+  $html .= "<hr><p>The content of the request array:</p><pre>" . htmlentities(print_r($ha->request, true)) . "</pre>";
   return $html;
 }
 

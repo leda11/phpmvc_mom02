@@ -2,19 +2,19 @@
 //
 // PHASE: BOOTSTRAP
 //
-define('LYDIA_INSTALL_PATH', dirname(__FILE__));
-define('LYDIA_SITE_PATH', LYDIA_INSTALL_PATH . '/site');
+define('HANDY_INSTALL_PATH', dirname(__FILE__));
+define('HANDY_SITE_PATH', HANDY_INSTALL_PATH . '/site');
 
-require(LYDIA_INSTALL_PATH.'/src/bootstrap.php');
+require(HANDY_INSTALL_PATH.'/src/bootstrap.php');
 
-$ly = CLydia::Instance();
+$ha = CHandy::Instance();
 
 //
 // PHASE: FRONTCONTROLLER ROUTE
 //
-$ly->FrontControllerRoute();
+$ha->FrontControllerRoute();
 
 //
 // PHASE: THEME ENGINE RENDER
 //
-$ly->ThemeEngineRender();
+$ha->ThemeEngineRender();
